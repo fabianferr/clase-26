@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function estaVacio()
+        {
+        if(document.getElementById("texto").value.trim() == "")
+        {
+        alert("El campo esta vacio - Ingrese un dato");
+        }
+        }
+        </script>
+        
+</head>
+<body>
+    <center><h2>Validar Datos - Valida que el campo no este
+    vacio</h2></center>
+    <br><br>
+    <form name="formu">
+    Nombre :<input type="text" name="texto" id="texto">
+    <input type="button" value="ver" onClick="estaVacio();">
+    </form>
+    </body>
+</html>
